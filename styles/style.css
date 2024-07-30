@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+h1 {
+    font-family: 'League Spartan', sans-serif;
+}
+
+section {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+#christ-logo {
+    height: 5rem;
+}
+
+#recruit-button {
+    margin-right: 2rem;
+}
+
+.navbar-drop {
+    /* add a bottom drop shadow */
+    box-shadow: 0 0 11px rgba(33,33,33,.5);
+}
+
+/* ... (your existing styles) ... */
+
+/* Additional styles for the changes */
+.font-smaller {
+    font-size: 0.8rem;
+}
+
+#profiles {
+    padding-top: 20px; /* Adjust this padding as needed */
+}
+
+/* Glassmorphism profile cards */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: box-shadow .3s;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add a gap below each card */
+    padding: 15px; /* Add some padding for better spacing */
+    width: 49%;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(33,33,33,.2);
+}
+
+.card:hover .card-title {
+    
+    text-decoration: underline;
+}
+
+#socials {
+    display: flex; /* Ensure the icons are displayed in a row */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#socials .btn-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: transform 0.2s;
+    margin-right: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+#socials .btn-icon:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+}
+
+#socials .btn-icon:hover {
+    transform: scale(1.3);
+}
+
+#socials .btn-icon i {
+    font-size: 1.5rem;/* Use 'black' instead of 'rgb(0, 0, 0)' for better readability */
+}
+
+#socials .btn-icon .fa-linkedin {
+    color: #0A66C2
+}
+
+#socials .btn-icon .fa-kaggle {
+    color: #20BEFF
+}
+
+/* marquee */
+.rectangle {
+    width: 100%;
+    height: 20rem;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #0A66C2;
+}
+
+#class-22-24 {
+    /* set image as background */
+    background-image: url('../assets/class_22_24.jpeg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#class-22-24::before {
+    /* add a dark overlay */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#brochure {
+    background-image: url('../assets/christ_arch_cover.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#brochure::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.slide-content {
+    position: relative;
+    z-index: 1;
+    color: #ddd;
+    padding: 2% 10%;
+}
+
+/* Add this CSS for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-info {
+    margin-bottom: 1rem;
+}
+
+.footer-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    color: #383838;
+}
+
+.footer-contact {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to a new line on smaller screens */
+    justify-content: space-between; /* Horizontal spacing between items */
+}
+
+.contact-person {
+    margin-right: 30px;
+}
+
+.contact-person h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.contact-person p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.2rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+@media (max-width: 767.98px) {
+    .card {
+        width: 100%;
+        padding: 5px;
+    }
+
+    #recruit-button {
+        width: 100%;
+    }
+}
+
+.slick-slide .inner {
+  margin: 0 15px;
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://kit.fontawesome.com/e2c53a38de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/christ_logo_color_circular.png" type="image/x-icon">
+    <title>BCA E-Portfolio</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary" id="navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand d-md-none" href="#"><img src="assets/christ_logo_color.png"
+                    alt="CHRIST (Deemed to be University)" id="christ-logo"></a>
+
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stats">Class of 2022-25</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#student-profiles">Student Profiles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recruiters">Persistent Recruiters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-details">Connect with us</a>
+                    </li>
+                </ul>
+                <a href="https://bit.ly/reg-mds-byc-24" target="_blank" rel="noopener noreferrer" class="btn btn-danger"
+                    id="recruit-button">Recruit Students</a>
+            </div>
+
+            <a class="navbar-brand d-none d-md-block" href="#"><img src="assets/christ_logo_color.png"
+                    alt="CHRIST (Deemed to be University)" id="christ-logo"></a>
+        </div>
+    </nav>
+    <!-- Site Heading -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+        <section class="container-fluid" id="home">
+            <h1 class="display-5 text-center">
+                BCA E-Portfolio
+            </h1>
+        </section>
+        <!-- Marquee -->
+        <section id="hero">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="rectangle carousel-item active" id="class-22-24">
+                        <div class="slide-content">
+                            <h1>Class of 2022-25</h1>
+                            <p>
+                                Welcome to the BCA E-Portfolio of the Class of 2022-25. A batch of 86
+                                talented students who excel in various fields of computer science.
+                            </p>
+                            <a href="#stats" class="btn btn-info">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="rectangle carousel-item" id="brochure">
+                        <div class="slide-content">
+                            <h1>Placement Brochure</h1>
+                            <p>
+                                The Placement Brochure for the class of 2022-25 highlights everything about our
+                                university and course, from the curriculum to the achievements of our students to the
+                                placement workflow.
+                            </p>
+                            <a href="https://drive.google.com/uc?export=download&id=1j_UekYNbV4WwrhArt2lJqJ6SfNWIr00o" class="btn btn-info">Download Brochure</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- Statistics -->
+        <section class="container-fluid" id="stats">
+            <h1 class="text-center">About the Class of 2022-25</h1>
+            <div class="numbers container-fluid">
+                <div class="row row-cols-md-3">
+                </div>
+            </div>
+            <div class="graphs container-fluid">
+                <div class="row">
+                    <div class="graph col-md-6 justify-content-center">
+                        <canvas id="sem-2-cs-elective"></canvas>
+                    </div>
+                    <div class="graph col md-6 justify-content-center">
+                        <canvas id="sem-2-stat-elective"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="graph col">
+                        <canvas id="skills-graph"></canvas>
+                    </div>
+                </div>
+        </section>
+        <!-- Student Profiles -->
+        <section class="container-fluid" id="student-profiles">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Student Profiles</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="search-text"
+                            placeholder="Search and filter results... (e.g: NLP, Cloud, Image Analytics, etc.)">
+                        <button class="btn btn-primary" id="search-button" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="profiles">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-around" id="students">
+                    <!-- student cards will be inserted here -->
+                </div>
+            </div>
+        </section>
+        <section id="recruiters">
+        <h1 class="text-center">Our Persistent Recruiters</h1>
+        <div class="slick marquee">
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/2560px-Eurofins_Scientific_Logo.svg.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/1409565391575110636_1409565391575110636-removebg-preview.png"
+                            alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/580b57fcd9996e24bc43c4a1.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/5add80b5165215fa247d.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/629a09b5b04c5ae587c411bb.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/Bi2i-with-bg-logo-removebg-preview.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/Citi.svg.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/consilio-vector-logo-removebg-preview.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/D._E._Shaw_&amp;_Co._logo.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/download-removebg-preview (1).png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/download-removebg-preview.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/grant-thornton-vector-logo-removebg-preview.png" alt="Placeholder"
+                            height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/hsbc-logo-1.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/IHS_Markit_logo.svg.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/image-removebg-preview.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/KPMG_logo.svg.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/Kritter-Full-Logo-Transparent-Background.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/MiQ_Logo-removebg-preview.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/Perficient-Logo-HorzJPG-removebg-preview.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/PRNE_Xoriant_Logo-removebg-preview.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/quantiphi-inc-logo-vector-removebg-preview.png" alt="Placeholder"
+                            height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/Syscloud_logo@2x.3ca6252c8cc99a8ffc85e4e2c6e6c1da225a3c48.png"
+                            alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/TOSHIBA_Logo.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+            
+                <div class="slick-slide">
+                    <div class="inner">
+                        <img src="assets/company_logos/Whatfix_Logo_RGB_Color.png" alt="Placeholder" height="78">
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" id="contact-details">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Christ (Deemed to be University)</h3>
+                    <p><b>Department of Computer Science</b><br />
+                        School of Sciences<br />
+                        Bangalore Yeshwanthpur Campus</p>
+                    <i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;<a
+                        href="https://goo.gl/maps/Ne8HnRegdWst9AeWA"
+                        class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        target="_blank" rel="noopener noreferrer">Reach the Campus</a>
+                </div>
+                <div class="footer-contact">
+                    <div class="contact-person">
+                        <h4>Connect with us</h4>
+                        <p><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;&nbsp;&nbsp;<a href="https://bit.ly/reg-mds-byc-24" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Interested in recruiting?</a></p>
+                        <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;<a
+                                href="mailto:cs.placements@christuniversity.in"
+                                class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">cs.placements@christuniversity.in</a>
+                        </p>
+                    </div>
+                    <div class="contact-person">
+                        <h4>Dr. Vinay M</h4>
+                        <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+91 99863 88234</p>
+                        <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;<a
+                                href="mailto:vinay.m@christuniversity.in"
+                                class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">vinay.m@christuniversity.in</a>
+                        </p>
+                    </div>
+                    <div class="contact-person">
+                        <h4>Dr. Balakrishnan C</h4>
+                        <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+91 98657 82529</p>
+                        <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;<a
+                                href="mailto:balakrishnan.c@christuniversity.in"
+                                class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">balakrishnan.c@christuniversity.in</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2023 CHRIST (Deemed to be University)
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.x"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="scripts/script.js"></script>
+
+</html>
